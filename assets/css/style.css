@@ -1,0 +1,290 @@
+/* 
+*Template Name/Project Name:xyz
+*Developer Name: Ms ABC
+*Contact:kakuliakter057@gmail.com
+ */
+ 
+ *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+ }
+:root{
+    --brand-color:#99cc66;
+    --black-color:#000000;
+    --white-color:#ffff;
+}
+/* header section start  */
+header{
+    background-image:linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)) ,url(../img/bannar.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* nav section start  */
+.navbar-toggler {
+    /* background-color: transparent; */
+    border: var(--bs-border-width) solid var(--bs-navbar-toggler-border-color);
+    background-color:aliceblue;
+    border-color:var(--brand-color);
+}
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 var(--white-color); 
+    text-shadow: none;
+}
+.navbar-toggler:hover {
+    border-color: #99cc66;
+    /* box-shadow: 0 0 0 var(--bs-navbar-toggler-focus-width); */
+}
+.navbar .img-fluid {
+    max-width: 80%;
+    height: auto;
+    /* max-width: 120px; */
+}
+
+ .navbar .nav-link {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    /* background-color: rgba(0,0,0,.7);
+    border: 1px solid var(--white-color);
+    padding: 10px; */
+} 
+.navbar .nav-link:hover,
+.navbar .nav-link:focus ,
+.navbar .nav-link.active{
+    color: var(--brand-color);
+}
+/* nav section start  */
+/* header section end */
+/* Banner setion start  */
+/* carousel */
+.carousel{
+    padding: 140px 0px 160px 0px;
+}
+.carousel .carousel-item h3{
+    font-weight: 600;
+}
+.carousel .carousel-item h1{
+    font-size: 60px;
+    border: 1px solid var(--white-color);
+    font-weight: 700;
+}
+.carousel .carousel-item  h1 span{
+    color: var(--brand-color);
+}
+.carousel-indicators [data-bs-target] {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border-top: 0px solid transparent;
+    border-bottom: 0px solid transparent;
+}
+.carousel-indicators .active{
+    background-color: var(--brand-color);
+}
+.carousel-indicators{
+    margin-bottom: 3rem;
+}
+/* Banner setion end */
+/* about section start  */
+.content-area h2{
+    font-size:28px;
+    font-weight: 600;
+}
+.fontwsome-area h2{
+    font-weight: 600;
+    font-size: 24px;
+}
+.fontwsome-area p{
+    text-align: justify;
+    font-size: 14px;
+}
+.fontwsome-area-hove i,
+.fontwsome-area-hover h2{
+    transition: all .5s;
+    cursor: pointer;
+}
+.fontwsome-area-hover:hover i,
+.fontwsome-area-hover:hover h2{
+    color: var(--brand-color);
+}
+/* about section end  */
+/* service section start  */
+.service{
+    background-color: #cccccc;
+}
+.service-content{
+    position: relative;
+    overflow: hidden;
+}
+.service-content-overlay{
+    position: absolute;
+    top: -100%;
+    width: 100%;
+    height: 100%;
+    background:rgba(0,0,0,.5);
+    transition:.5s all;
+    cursor: pointer;
+}
+.service-content:hover .service-content-overlay{
+    top: 0px;
+}
+.service-content .service-content-overlay a{
+    color: var(--white-color);
+    border: 1px solid var(--white-color);
+    border-radius: 50%;
+    margin-right: 6px;
+    text-decoration: none;
+    padding: 10px;
+    transition: all .5s;
+    transform: translatey(90px);
+    transform: translatex(90px);
+    display: inline-block;
+}
+.service-content .service-content-overlay a:hover{
+    background: var(--brand-color);
+}
+.service-content .service-content-overlay a.fa-brands{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    text-align: center;
+}
+/* service section end  */
+/* portfolio section start  */
+.portfolio-item{
+    position: relative;
+    overflow: hidden;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: var(--bs-nav-pills-link-active-color);
+    background-color: var(--brand-color);
+}
+.nav-pills .nav-link.active, .nav-pills .nav-link:hover {
+    color: var(--bs-nav-pills-link-active-color);
+    background-color: var(--brand-color);
+}
+.nav-pills .nav-link {
+    font-weight: 400;
+    background: #0000;
+    background-color: #000;
+    color: #ffff;
+    margin-left: 20px;
+    /* border: 0; */
+    border-radius: 0px;
+}
+.portfolio-item-overlay{
+    position: absolute;
+    top: -100%;
+    width: 100%;
+    height: 100%;
+    background:rgba(0,0,0,.5);
+    transition:.5s all;
+    cursor: pointer;
+}
+.portfolio-item:hover .portfolio-item-overlay{
+    top: 0px;
+}
+.portfolio-item .portfolio-item-overlay p{
+    color: var(--brand-color);
+    transition: all .5;
+    transform: translatey(90px);
+    transform: translatex(90px);
+    display: inline-block;
+    font-size: 30px;
+}
+.portfolio-item .portfolio-item-overlay h3:hover{
+    color: var(--brand-color);
+}
+.portfolio-item .portfolio-item-overlay h3{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    text-align: center;
+}
+/* portfolio section end */
+/* pricing section start */
+.round{
+    border: 3px solid #fff;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    margin: auto;
+    text-align: center;
+    padding: 0px 10px;
+}
+.round p{
+    margin-top: 40%;
+}
+.round p sub{
+    /* padding: 0px 30px; */
+}
+.content-list .list{
+    list-style: none;
+}
+.content-list .list a{
+    text-decoration: none;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+.order {
+    border: 1px solid #fff;
+    padding: 10px 15px;
+    color: #fff;
+    text-decoration: none;
+    transition: all .5s;
+}
+.order:hover{
+   background-color: #fff;
+   color: #000;
+}
+
+/* pricing section end */
+
+/* banner section start  */
+.banner-section{
+    background: url(../img/banner2.png);
+    height: 200px;
+}
+.banner-section .box{
+    border: 0.5px solid #fff;
+    width: 200px;
+    height:100px ;
+    text-align: center;
+}
+/* banner section end */
+/* contact  section start  */
+.contecontact-area h2{
+    font-size:28px;
+    font-weight: 600;
+}
+.contact-area h3{
+    font-weight: 600;
+    font-size: 18px;
+}
+.contact-area span{
+    text-align: justify;
+    font-size: 14px;
+}
+.contact-area-hove i,
+.contact-area-hover h3{
+    transition: all .5s;
+    cursor: pointer;
+}
+.contact-area-hover:hover i,
+.contact-area-hover:hover h3{
+    color: var(--brand-color);
+}
+/*contact section end  */
+/* footer section start  */
+footer{
+
+}
+.copyright p {
+    text-align: center;
+    padding-top: 20px;
+}
+iframe  {
+    width: 100%;
+}
+/* footer section end */
